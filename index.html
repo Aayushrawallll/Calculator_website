@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Caluclator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=0.1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5a8205d103.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/site.css?v=1" />
+</head>
+<body>
+    <div class="container body-content">
+        <h1>Calculator Using Bootstrap & jQuery</h1>
+        <div class="dg-calc-wrapper">
+            <div class="dg-calc-row-margin">
+                <div id="calcDisplay" class="form-control text-right"></div>
+            </div>
+            <div>
+                <div class="row dg-calc-row-margin">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="C">C</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="CE">CE</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="PM">+/-</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="P">+</button>
+                    </div>
+                </div>
+                <div class="row dg-calc-row-margin">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="7">7</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="8">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="9">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="M">-</button>
+                    </div>
+                </div>
+                <div class="row dg-calc-row-margin">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="4">4</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="5">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="6">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="T">&times;</button>
+                    </div>
+                </div>
+                <div class="row dg-calc-row-margin">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="1">1</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="2">2</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="3">3</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="D">&divide;</button>
+                    </div>
+                </div>
+                <div class="row dg-calc-row-margin">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="num" data-btn-id="0">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="DP">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-dark dg-calc-btn" data-btn-type="func" data-btn-id="E">=</button>
+                    </div>
+                </div>
+            </div>
+            <input id="calcRegister" type="hidden" value="" />
+            <input id="calcSelectedFunction" type="hidden" value="" />
+            <input id="calcResetDisplayOnNextNumber" type="hidden" value="" />
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js?v=1.1"></script>
+</body>
+</html>
